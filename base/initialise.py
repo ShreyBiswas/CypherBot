@@ -14,4 +14,6 @@ async def on_message(message):
     if message.content.startswith('.hello'):
         await message.channel.send('Ready!')
 
-client.run('')
+with open('api_key.txt','r') as f:
+    token = f.read()
+client.run(token)
