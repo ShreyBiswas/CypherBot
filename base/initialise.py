@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -14,6 +15,5 @@ async def on_message(message):
     if message.content.startswith('.hello'):
         await message.channel.send('Ready!')
 
-with open('api_key.txt','r') as f:
-    token = f.read()
+token = os.getenv('Discord_Token')
 client.run(token)
