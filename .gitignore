@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-#API Token Files
-.txt
-
 # C extensions
 *.so
 
