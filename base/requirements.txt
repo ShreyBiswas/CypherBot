@@ -1,0 +1,4 @@
+Python Libraries to install:
+
+discord.py
+dotenv
